@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Sent Successfully!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #ff9800;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e68900;
+        }
+
+        /* Firework animations */
+        .firework {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: transparent;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #ff0;
+            animation: explode 1s ease-out infinite;
+        }
+
+        @keyframes explode {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(3);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🎉 Email Sent Successfully! 🎉</h1>
+        <p>Thank you for your application. We will review your details and get back to you soon!</p>
+        <a href="/" class="btn">Go to Home</a>
+    </div>
+
+    <script>
+        // Fireworks effect
+        function createFirework() {
+            const firework = document.createElement("div");
+            firework.classList.add("firework");
+            document.body.appendChild(firework);
+
+            const x = Math.random() * window.innerWidth;
+            const y = Math.random() * window.innerHeight;
+
+            firework.style.left = `${x}px`;
+            firework.style.top = `${y}px`;
+
+            setTimeout(() => {
+                firework.remove();
+            }, 1000);
+        }
+
+        setInterval(createFirework, 200);
+    </script>
+
+</body>
+
+</html>

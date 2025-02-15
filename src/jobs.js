@@ -1,0 +1,96 @@
+const jobs = [
+  {
+    id: 1,
+    title: "Software Engineer",
+    company: "TechCorp",
+    location: "New York, NY",
+    type: "Full-time",
+    salary: "$90,000 - $120,000",
+    description:
+      "We are looking for a skilled Software Engineer to develop and maintain web applications.",
+    requirements: [
+      "Experience with JavaScript, Node.js, and React",
+      "Strong problem-solving skills",
+      "Bachelor’s degree in Computer Science",
+    ],
+    postedDate: "2025-02-10",
+  },
+  {
+    id: 2,
+    title: "Marketing Manager",
+    company: "BizGrowth",
+    location: "Los Angeles, CA",
+    type: "Full-time",
+    salary: "$70,000 - $90,000",
+    description: "Join our team to lead marketing strategies and campaigns.",
+    requirements: [
+      "Experience in digital marketing",
+      "Excellent communication skills",
+      "3+ years of experience in a marketing role",
+    ],
+    postedDate: "2025-02-08",
+  },
+  {
+    id: 3,
+    title: "Data Analyst",
+    company: "Data Insights",
+    location: "Remote",
+    type: "Part-time",
+    salary: "$50,000 - $70,000",
+    description:
+      "Analyze business data and provide insights for decision-making.",
+    requirements: [
+      "Proficiency in SQL and Python",
+      "Experience with data visualization tools",
+      "Strong analytical mindset",
+    ],
+    postedDate: "2025-02-12",
+  },
+  {
+    id: 4,
+    title: "Graphic Designer",
+    company: "Creative Minds",
+    location: "San Francisco, CA",
+    type: "Contract",
+    salary: "$40/hour",
+    description: "Create visually appealing designs for web and print media.",
+    requirements: [
+      "Proficiency in Adobe Photoshop & Illustrator",
+      "Creative thinking and attention to detail",
+      "Portfolio of previous work",
+    ],
+    postedDate: "2025-02-05",
+  },
+  {
+    id: 4,
+    title: "Graphic Designer",
+    company: "Creative Minds",
+    location: "San Francisco, CA",
+    type: "Contract",
+    salary: "$40/hour",
+    description: "Create visually appealing designs for web and print media.",
+    requirements: [
+      "Proficiency in Adobe Photoshop & Illustrator",
+      "Creative thinking and attention to detail",
+      "Portfolio of previous work",
+    ],
+    postedDate: "2025-02-05",
+  },
+  {
+    id: 4,
+    title: "Graphic Designer",
+    company: "Creative Minds",
+    location: "San Francisco, CA",
+    type: "Contract",
+    salary: "$40/hour",
+    description: "Create visually appealing designs for web and print media.",
+    requirements: [
+      "Proficiency in Adobe Photoshop & Illustrator",
+      "Creative thinking and attention to detail",
+      "Portfolio of previous work",
+    ],
+    postedDate: "2025-02-05",
+  },
+];
+
+module.exports = jobs;

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Navbar Styling */
+        .navbar {
+            padding: 15px 0;
+        }
+
+        .navbar-nav .nav-item {
+            margin: 0 10px;
+        }
+
+        .navbar-nav .nav-link {
+            background-color: #007bff;
+            color: white !important;
+            border-radius: 5px;
+            padding: 8px 15px;
+            transition: 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: #0056b3;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .hero-img img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">JobPortal</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item m-2"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item m-2"><a class="nav-link" href="/job-list">Jobs</a></li>
+                <li class="nav-item m-2"><a class="nav-link" href="/about">About Us</a></li>
+                <li class="nav-item m-2"><a class="nav-link" href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row d-flex align-items-center text-center text-md-start">
+                <!-- Image First in Mobile View -->
+                <div class="col-md-6 order-1 order-md-2 hero-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH77QQE0JE0jRo5tN9xCvTOaGf7ZuxxliAaC5LsAGv1KmuVCzDFb3x6jw&s=10"
+                        alt="Job Search">
+                </div>
+                <!-- Text Below in Mobile View -->
+                <div class="col-md-6 order-2 order-md-1">
+                    <h1>Find Your Dream Job</h1>
+                    <p>Explore thousands of job opportunities in various industries. Whether you're a fresh graduate
+                        looking
+                        for your first job or a professional seeking a career switch, we've got the right job for you.
+                    </p>
+                    <p>✔ Access a wide range of job listings across multiple industries.<br>
+                        ✔ Connect with top companies and recruiters.<br>
+                        ✔ Get career tips, resume guidance, and interview preparation.<br>
+                        ✔ Apply easily and track your applications in one place.</p>
+                    <a href="job-list" class="btn btn-primary mt-3">View Jobs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="mt-lg-5">
+        <p>&copy; 2025 JobPortal. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

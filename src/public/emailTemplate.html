@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Received</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .header {
+            background: #007bff;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 12px 12px 0 0;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px;
+            color: #333;
+            text-align: left;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .content strong {
+            color: #007bff;
+        }
+
+        .footer {
+            margin-top: 20px;
+            padding: 15px;
+            font-size: 14px;
+            color: #777;
+            border-top: 1px solid #ddd;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #007bff;
+            color: #ffffff;
+            padding: 12px 20px;
+            margin-top: 15px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">🎉 Application Received!</div>
+        <div class="content">
+            <p>Dear <strong>{{name}}</strong>,</p>
+            <p>Thank you for applying for the <strong>{{title}}</strong> position at our company.</p>
+            <p>We have successfully received your application and our team is currently reviewing it.</p>
+            <p>We will get in touch with you soon regarding the next steps.</p>
+            <a href="https://example.com/jobs" class="btn">🔍 Explore More Jobs</a>
+        </div>
+        <div class="footer">
+            &copy; 2025 Your Company | All Rights Reserved
+        </div>
+    </div>
+</body>
+
+</html>
