@@ -98,8 +98,11 @@
                     <label for="coverLetter" class="form-label">Cover Letter (Optional)</label>
                     <textarea class="form-control" id="coverLetter" name="coverLetter" rows="4"></textarea>
                 </div>
+                 <!-- hCaptcha Widget -->
+                <div class="h-captcha" data-sitekey="bed22f48-3ee8-4426-85da-d0e643b898f8" data-callback="enableSubmit"></div>
 
-                <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+
+                <button type="submit" class="btn btn-primary w-100" id="submitBtn" disabled>Submit Application</button>
             </form>
         </div>
     </div>
@@ -110,6 +113,13 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- hCaptcha Script -->
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+<script>
+    function enableSubmit() {
+        document.getElementById("submitBtn").disabled = false;
+    }
+</script>
 </body>
 
 </html>
